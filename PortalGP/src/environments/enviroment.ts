@@ -1,5 +1,5 @@
-// const dominio = 'http://172.20.0.2:8000';
-const dominio = 'http://192.168.1.36:8083';
+const dominio = 'http://172.20.0.2:8000';
+// const dominio = 'http://192.168.1.36:8083';
 const dominio_CountryFlag = 'https://flagcdn.com/w320/';
 
 export const environment = {
