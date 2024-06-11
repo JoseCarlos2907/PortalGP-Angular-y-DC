@@ -25,7 +25,7 @@
             [class.carreraClaro]="temaSeleccionado == 0 || temaSeleccionado == 1 || temaSeleccionado == 2 || temaSeleccionado == 3 "
             [class.carreraOscuro]="temaSeleccionado == 4"
             (click)="verDetallesCarrera(carrera.id)">
-                <img [src]="carrera.imgSiluetaCircuito" alt="">
+                <img [src]="carrera.imgSiluetaCircuito" alt="Imagen silueta del circuito">
                 <h5>GP de {{ carrera.nombrePais }}</h5>
                 <p>{{ carrera.fechaCadena }}</p>
                 <h5>{{ carrera.horaInicio }}</h5>
@@ -44,6 +44,6 @@
     [class.vaClaro]="temaSeleccionado == 0 || temaSeleccionado == 1 || temaSeleccionado == 2 "
     [class.vaOscuro]="temaSeleccionado == 3 || temaSeleccionado == 4"
     >
-        <img [src]="rutaIconoVolverArriba" alt="">
+        <img [src]="rutaIconoVolverArriba" alt="Icono volver arriba Negro">
     </button>
 }

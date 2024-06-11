@@ -18,7 +18,7 @@
     <div class="informacionEscuderia">
 
         <div class="fotoLogo">
-            <img [src]="escuderia.imgLogo" alt="">
+            <img [src]="escuderia.imgLogo" alt="Imagen logo escudería">
         </div>
 
         <div class="descripcionEscuderia">
@@ -33,20 +33,20 @@
         <div class="gridImagenes">
             <mat-grid-list cols="4">
                 <mat-grid-tile [colspan]="2" [rowspan]="2">
-                    <img class="imagenGrande" [src]="imagenSeleccionada" alt="">
+                    <img class="imagenGrande" [src]="imagenSeleccionada" alt="Imagen coche seleccionada">
                 </mat-grid-tile>
                 
                 <mat-grid-tile (click)="seleccionarImagen(escuderia.imgPrincipal)">
-                    <img class="imagenPequenia" [src]="escuderia.imgPrincipal" alt="">
+                    <img class="imagenPequenia" [src]="escuderia.imgPrincipal" alt="Imagen de coche principal">
                 </mat-grid-tile>
                 <mat-grid-tile (click)="seleccionarImagen(escuderia.segundaImg)">
-                    <img class="imagenPequenia" [src]="escuderia.segundaImg" alt="">
+                    <img class="imagenPequenia" [src]="escuderia.segundaImg" alt="Secundaria imagen de coche">
                 </mat-grid-tile>
                 <mat-grid-tile (click)="seleccionarImagen(escuderia.terceraImg)">
-                    <img class="imagenPequenia" [src]="escuderia.terceraImg" alt="">
+                    <img class="imagenPequenia" [src]="escuderia.terceraImg" alt="Terciaria imagen de coche">
                 </mat-grid-tile>
                 <mat-grid-tile (click)="seleccionarImagen(escuderia.cuartaImg)">
-                    <img class="imagenPequenia" [src]="escuderia.cuartaImg" alt="">
+                    <img class="imagenPequenia" [src]="escuderia.cuartaImg" alt="Cuarta imagen de coche">
                 </mat-grid-tile>
             </mat-grid-list>
         </div>

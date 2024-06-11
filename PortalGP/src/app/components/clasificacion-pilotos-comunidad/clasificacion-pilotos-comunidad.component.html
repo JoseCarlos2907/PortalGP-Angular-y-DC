@@ -24,28 +24,6 @@
                     <th><p>Pais</p></th>
                     <th><p>Votos</p></th>
                 </tr>
-
-                <!-- <tr 
-                [class.trPilotoClaro]="temaSeleccionado == 0 || temaSeleccionado == 1 || temaSeleccionado == 2 || temaSeleccionado == 3 "
-                [class.trPilotoOscuro]="temaSeleccionado == 4"  
-                (click)="verPerfilPiloto(0)">
-                    <td><p>1</p></td>
-                    <td class="tdImgPiloto">
-                        <p>
-                            <img src="../../../assets/images/UsuarioPredeterminado.png" alt="">
-                        </p>
-                    </td>
-                    <td class="tdNombreCompleto">
-                        <p>Nombre</p>
-                        <p>Apellido</p>
-                    </td>
-                    <td><p>Nombre de Escuderia</p></td>
-                    <td class="tdPais">
-                        <img [src]="getImagenBandera('ES')" alt=""/>
-                    </td>
-                    <td><p>10000</p></td>
-                </tr>  -->
-
                     @for(piloto of datosClasificacion; track $index){
                         <tr 
                         [class.trPilotoClaro]="temaSeleccionado == 0 || temaSeleccionado == 1 || temaSeleccionado == 2 || temaSeleccionado == 3 "
@@ -54,7 +32,7 @@
                             <td><p>{{ $index + 1 }}</p></td>
                             <td class="tdImgPiloto">
                                 <p>
-                                    <img [src]="piloto.imgPerfil" alt="">
+                                    <img [src]="piloto.imgPerfil" alt="Imagen de perfil de Piloto">
                                 </p>
                             </td>
                             <td class="tdNombreCompleto">
@@ -63,7 +41,7 @@
                             </td>
                             <td><p>{{ piloto.nombreEscuderia }}</p></td>
                             <td class="tdPais">
-                                <img [src]="getImagenBandera(piloto.paisCC)" alt=""/>
+                                <img [src]="getImagenBandera(piloto.paisCC)" alt="Bandera de País" [title]="piloto.nombrePais"/>
                             </td>
                             <td><p>{{ piloto.votosTotales }}</p></td>
                         </tr> 

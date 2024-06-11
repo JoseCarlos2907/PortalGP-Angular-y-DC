@@ -1,6 +1,6 @@
 <div class="redDivHeader">
     <button mat-button (click)="toggleSidenav()">
-        <img src="../../../assets/images/IconoMenuNegro.png" alt="">
+        <img src="../../../assets/images/IconoMenuNegro.png" alt="Icono menu Negro">
     </button>
 
     <p-sidebar [(visible)]="abierto">
@@ -17,20 +17,20 @@
     </p-sidebar>
 
     <a [class.menor600px]="menor600px" (click)="goTo('/home')">
-        <img [class.menor600px]="menor600px" src="../../../assets/images/LogoPortalGP-SinBG.png" alt="Imagen">
+        <img [class.menor600px]="menor600px" src="../../../assets/images/LogoPortalGP-SinBG.png" alt="Logo PortalGP">
     </a>
 
     <div class="perfil">
         @defer {
             @if(loggeado === false){
                 <span (click)="identificarse()">
-                    <img src="../../../assets/images/UsuarioPredeterminado.png" alt="Imagen">
+                    <img src="../../../assets/images/UsuarioPredeterminado.png" alt="Imagen perfil Usuario predeterminado">
                     <p>Identificarse</p>
                 </span>
             }
             @else {
                 <span (click)="configuracionCuenta()">
-                    <img [src]='imgPerfilUsuario' alt="">
+                    <img [src]='imgPerfilUsuario' alt="Imagen perfil usuario">
                     <p>Tu Perfil</p>
                 </span>
             }

@@ -60,7 +60,7 @@
         
     </div>
     <button class="submitButton" (click)="cambiosDatosPrincipales()">
-        <img src="../../../assets/images/IconoGuardarBlanco.png" alt="">
+        <img src="../../../assets/images/IconoGuardarBlanco.png" alt="Icono de Guardar Blanco">
         <p>Guardar Cambios</p>
     </button>
 
@@ -90,9 +90,9 @@
                         >
                         <button mat-icon-button matSuffix (click)="hide1 = !hide1" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide1">
                             @if(hide1){
-                                <img class="iconoInput" src="../../../assets/images/IconoOcultarContraseniaNegro.png" alt="">
+                                <img class="iconoInput" src="../../../assets/images/IconoOcultarContraseniaNegro.png" alt="Icono ocultar contraseña Negro">
                             }@else{
-                                <img class="iconoInput" src="../../../assets/images/IconoMostrarContraseniaNegro.png" alt="">
+                                <img class="iconoInput" src="../../../assets/images/IconoMostrarContraseniaNegro.png" alt="Icono mostrar contraseña Negro">
                             }
                         </button>
                         @if(formContrasenia.get('oldContrasenia')?.hasError('required')){
@@ -114,9 +114,9 @@
                         >
                         <button mat-icon-button matSuffix (click)="hide2 = !hide2" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide2">
                             @if(hide2){
-                                <img class="iconoInput" src="../../../assets/images/IconoOcultarContraseniaNegro.png" alt="">
+                                <img class="iconoInput" src="../../../assets/images/IconoOcultarContraseniaNegro.png" alt="Icono ocultar contraseña Negro">
                             }@else{
-                                <img class="iconoInput" src="../../../assets/images/IconoMostrarContraseniaNegro.png" alt="">
+                                <img class="iconoInput" src="../../../assets/images/IconoMostrarContraseniaNegro.png" alt="Icono mostrar contraseña Negro">
                             }
                         </button>
                         @if(formContrasenia.get('newContrasenia')?.hasError('required')){
@@ -138,9 +138,9 @@
                         >
                         <button mat-icon-button matSuffix (click)="hide3 = !hide3" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide3">
                             @if(hide3){
-                                <img class="iconoInput" src="../../../assets/images/IconoOcultarContraseniaNegro.png" alt="">
+                                <img class="iconoInput" src="../../../assets/images/IconoOcultarContraseniaNegro.png" alt="Icono de ocultar Negro">
                             }@else{
-                                <img class="iconoInput" src="../../../assets/images/IconoMostrarContraseniaNegro.png" alt="">
+                                <img class="iconoInput" src="../../../assets/images/IconoMostrarContraseniaNegro.png" alt="Icono de mostrar Negro">
                             }
                         </button>
                         @if(formContrasenia.get('newContraseniaRepetida')?.hasError('required')){
@@ -234,12 +234,12 @@
 
     <div class="botonesFinales">
         <button class="submitButton" (click)="cerrarSesion()">
-            <img src="../../../assets/images/IconoSalirBlanco.png" alt="">
+            <img src="../../../assets/images/IconoSalirBlanco.png" alt="Icono salir Blanco">
             <p>Cerrar Sesión</p>
         </button>
         
         <button class="submitButton" (click)="eliminarCuenta()">
-            <img src="../../../assets/images/IconoBorrarBlanco.png" alt="">
+            <img src="../../../assets/images/IconoBorrarBlanco.png" alt="Icono borrar Blanco">
             <p>Eliminar Cuenta</p>
         </button>
     </div>

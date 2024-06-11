@@ -101,19 +101,19 @@
         <div class="rowDiv">
           <label for="inputImagenPerfil" class="inputImagenPerfil">
             <p>Foto de Perfil</p>
-              <img [src]="base64Image" alt="">
+              <img [src]="base64Image" alt="Imagen perfil usuario seleccionada">
           </label>
           <input type="file" id="inputImagenPerfil" formControlName="fotoPerfil" (change)="handleImageUpload($event)">
         </div>
         
         <div class="buttonsRow">
           <button (click)="cancelRegister()">
-            <img src="../../../../assets/images/IconoCerrarBlanco.png" alt="">
+            <img src="../../../../assets/images/IconoCerrarBlanco.png" alt="Icono cerrar Blanco">
             <p>Cancelar</p>
           </button>
           <button type="submit">
             <p>Siguiente</p>
-            <img src="../../../../assets/images/IconoFlechaDerechaBlanco.png" alt="">
+            <img src="../../../../assets/images/IconoFlechaDerechaBlanco.png" alt="Icono flecha derecha Blanco">
           </button>
         </div>
     </form>

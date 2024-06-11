@@ -1,7 +1,7 @@
 <div class="comentarMainDiv">
     <div>
         <h1>Comentar</h1>
-        <img src="../../../assets/images/IconoCerrarNegro.png" alt="" (click)="cerrarModal()">
+        <img src="../../../assets/images/IconoCerrarNegro.png" alt="Icono cerrar Negro" (click)="cerrarModal()">
     </div>
 
 
@@ -11,7 +11,7 @@
             <mat-select formControlName="idPiloto">
                 @for(piloto of pilotos; track 0){
                     <mat-option [value]="piloto.idPiloto">
-                        <img [src]="piloto.imgPerfil" alt="">
+                        <img [src]="piloto.imgPerfil" alt="Imagen perfil usuario">
                         {{ piloto.nombre + ' ' + piloto.apellido }}
                     </mat-option>
                 }

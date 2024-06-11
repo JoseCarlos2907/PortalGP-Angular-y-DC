@@ -17,7 +17,7 @@
         [class.bgClaro]="temaSeleccionado == 0 || temaSeleccionado == 1 || temaSeleccionado == 2"
         [class.bgOscuro]="temaSeleccionado == 3 || temaSeleccionado == 4"
         (click)="libreAnterior()">
-            <img src="../../../assets/images/IconoFlechaIzquierdaNegro.png" alt="">
+            <img src="../../../assets/images/IconoFlechaIzquierdaNegro.png" alt="Icono de flecha Izquierda Negro">
         </button>
         <table class="tablaPodio">
             <tbody>
@@ -28,7 +28,7 @@
                         <p>{{ convertirFechaACadena(datosLibres[pos].fecha, datosLibres[pos].hora) }}</p>
                         <div>
                             <!-- Icono Reloj -->
-                            <img src="../../../assets/images/IconoEnProcesoNegro.png" height="25px" width="25px" alt="">
+                            <img src="../../../assets/images/IconoEnProcesoNegro.png" height="25px" width="25px" alt="Icono en proceso Negro">
                             <p>{{ datosLibres[pos].hora }}</p>
                         </div>
                     </div>
@@ -68,7 +68,7 @@
         [class.bgClaro]="temaSeleccionado == 0 || temaSeleccionado == 1 || temaSeleccionado == 2"
         [class.bgOscuro]="temaSeleccionado == 3 || temaSeleccionado == 4"
         (click)="libreSiguiente()"> 
-            <img src="../../../assets/images/IconoFlechaDerechaNegro.png" alt="">
+            <img src="../../../assets/images/IconoFlechaDerechaNegro.png" alt="Icono flecha derecha Negro">
         </button>
     </div>
 
@@ -82,7 +82,7 @@
                         <p>{{ convertirFechaACadena(datosClasificacion.fecha, datosClasificacion.hora) }}</p>
                         <div>
                             <!-- Icono Reloj -->
-                            <img src="../../../assets/images/IconoFinalizadoNegro.png" height="25px" width="25px" alt="">
+                            <img src="../../../assets/images/IconoFinalizadoNegro.png" height="25px" width="25px" alt="Icono finalizar Negro">
                             <p>{{ datosClasificacion.hora }}</p>
                         </div>
                     </div>
@@ -130,7 +130,7 @@
                         <p>{{ convertirFechaACadena(datosCarrera.fecha, datosCarrera.hora) }}</p>
                         <div>
                             <!-- Icono Reloj -->
-                            <img src="../../../assets/images/IconoHoraNegro.png" height="25px" width="25px" alt="">
+                            <img src="../../../assets/images/IconoHoraNegro.png" height="25px" width="25px" alt="Icono hora Negro">
                             <p>{{ datosCarrera.hora }}</p>
                         </div>
                     </div>
@@ -177,7 +177,7 @@
                 <button mat-stroked-button [disabled]="haComentado == true"
                 (click)="abrirModalComentar()"
                 >
-                    <img src="../../../assets/images/IconoComentarioNegro.png" alt="">
+                    <img src="../../../assets/images/IconoComentarioNegro.png" alt="Icono comentario Negro">
                 </button>
         </div>
 
@@ -189,11 +189,11 @@
                     <div class="comentario">
                         <div class="usuarioYPiloto">
                             <div>
-                                <img [src]="comentario.imgPerfilUsuario" alt="">
+                                <img [src]="comentario.imgPerfilUsuario" alt="Imagen perfil Usuario">
                                 <h3>{{ comentario.nombreUsuario }}</h3>
                             </div>
                             <div>
-                                <img [src]="comentario.imgPerfilPiloto" alt="">
+                                <img [src]="comentario.imgPerfilPiloto" alt="Imagen perfil Piloto">
                                 <h4>{{ comentario.nombrePiloto }}</h4>
                             </div>
                         </div>
