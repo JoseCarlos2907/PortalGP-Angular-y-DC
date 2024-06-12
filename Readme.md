@@ -10,7 +10,7 @@ Este proyecto consiste en una página web hecha con Symfony (backend), Angular (
 - Tener Git instalado
 ## Instalación con Script (Opción 1)
 
-- Lo único que tenemos que hacer una vez clonado este repositorio es ejecutar el script "start.sh" que está dentro y se te abrirá automáticamente la página cuando esté cargado todo.
+- Lo único que tenemos que hacer una vez clonado este repositorio dentro de una carpeta vacía es ejecutar el script "start.sh" que está dentro y se te abrirá automáticamente la página cuando esté cargado todo.
 ## Instalación manual, sin script (Opción 2)
 
 - Lo primero que tenemos que hacer es descargar la imagen del contenedor de backend, para ello ejecutamos el comando: 
