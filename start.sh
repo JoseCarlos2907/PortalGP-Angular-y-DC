@@ -12,9 +12,10 @@ sleep 5
 # Se ejecutan estos comandos para abrir el servicio y poner en funcionamiento la API
 
 COMANDO1 = "/opt/lampp/lampp start"
-COMANDO2 = "symfony server:start –-port=8000"
+COMANDO2 = "cd /home/usuario/symfony/API_PortalGP"
+COMANDO3 = "symfony server:start –-port=8000"
 
-docker exec backend/bin/sh -c "$COMANDO1 && $COMANDO2"
+docker exec backend /bin/sh -c "$COMANDO1 && $COMANDO2 && $COMANDO3"
 
 # Se ejecutan estos comandos para arrancar la aplicación
 cd ..
