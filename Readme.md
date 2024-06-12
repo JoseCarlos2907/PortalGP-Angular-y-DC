@@ -6,32 +6,24 @@
     # Tener NPM 10.2.4 instalado
     # Tener NodeJS 20.11.1 instalado
     # Tener Angular CLI 17.3.7 instalado
-    # Tener Firefox instalado
+    # Tener Git instalado
 
 #Pasos instalación con script:
-    #Lo primero que tenemos que hacer una vez clonado este repositorio es ejecutar el script "start.sh" que está dentro
-
-
+    #Lo primero que tenemos que hacer una vez clonado este repositorio es ejecutar el script "start.sh" que está dentro y se te abrirá automáticamente la página cuando esté cargado todo
 
 
 #Pasos instalación manual, sin script:
-    #Lo primero que tenemos que hacer es descargar la imagen del contenedor de backend, para ello ejecutamos el comando: docker pull josecarlos2907/backend_pgp:12.06.1
+    #Lo primero que tenemos que hacer es descargar la imagen del contenedor de backend, para ello ejecutamos el comando: docker pull josecarlos2907/backend_pgp:12.06.2
 
     #Después creamos la red para el contenedor con el siguiente comando: docker network create -–driver bridge -–subnet 172.20.0.0/16 -–gateway 172.20.0.1 red_pgp
 
-    #Una vez creada la red procedemos a crear el contenedor con la imagen descargada anteriormente con el siguiente comando: docker run -it –-name backend -p 8081:80 -p 8082:3306 -p 8083:8000 -–ip 172.20.0.2 -–net red_pgp josecarlos2907/backend_pgp:12.06.1
+    #Una vez creada la red procedemos a crear el contenedor y ponerlo en marcha con la imagen descargada anteriormente con el siguiente comando: sudo docker run -d --name backend -p 8081:80 -p 8082:3306 -p 8083:8000 --ip 172.20.0.2 --net red_pgp --entrypoint /bin/sh josecarlospg2907/backend_pgp:12.06.2 -c "/opt/lampp/lampp start && cd /home/usuario/symfony/API_PortalGP && symfony server:start --port=8000"
 
-    #En caso de que no se arranque el contenedor directamente ejecutamos los siguientes comandos para arrancar el contenedor: 
-        # docker start backend
-        # docker exec -it backend bash
-
-    #Y una vez dentro para poner en funcionamiento la API ejecutamos los siguientes comandos:
-        # /opt/lampp/lampp start
-        # symfony server:start –-port=8000
-    
-    #Ya tenemos la parte del backend en funcionamiento, ahora vamos a poner la parte del frontend en otro terminal, para ello ejecutamos los siguientes comandos en el siguiente orden:
-        # cd PortalGP
+    #Ya tenemos la parte del backend en funcionamiento, ahora vamos a poner la parte del frontend, para ello ejecutamos los siguientes comandos en el siguiente orden:
+        # cd ..
+        # git clone https://github.com/JoseCarlos2907/Angular_PortalGP.git
+        # cd Angular_PortalGP
         # npm i
-        # ng s
+        # ng s -o
 
-    #Y con esto ya estaría en funcionamiento la página al completo, para disfrutar de ella debes irte al navegador y escribir en la barra de búsqueda lo siguiente: localhost:4200
+    #Y con esto ya estaría en funcionamiento la página al completo, para disfrutar de ella se te abre el navegador automaticamente o si lo quieres abrir a mano, debes irte al navegador y escribir en la barra de búsqueda lo siguiente: http://localhost:4200
