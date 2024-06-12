@@ -16,7 +16,7 @@ Este proyecto consiste en una página web hecha con Symfony (backend), Angular (
 - Lo primero que tenemos que hacer es descargar la imagen del contenedor de backend, para ello ejecutamos el comando: 
 
 ```bash
-        sudo docker pull josecarlos2907/backend_pgp:12.06.2
+        sudo docker pull josecarlos2907/backend_pgp:12.06.3
 ```
 
 - Después creamos la red para el contenedor con el siguiente comando: 
@@ -26,7 +26,7 @@ Este proyecto consiste en una página web hecha con Symfony (backend), Angular (
 
 - Una vez creada la red procedemos a crear el contenedor y ponerlo en marcha con la imagen descargada anteriormente con el siguiente comando: 
 ```bash
-        sudo docker run -d --name backend -p 8081:80 -p 8082:3306 -p 8083:8000 --ip 172.20.0.2 --net red_pgp --entrypoint /bin/sh josecarlospg2907/backend_pgp:12.06.2 -c "/opt/lampp/lampp start && cd /home/usuario/symfony/API_PortalGP && symfony server:start --port=8000"
+        sudo docker run -d --name backend -p 8081:80 -p 8082:3306 -p 8083:8000 --ip 172.20.0.2 --net red_pgp --entrypoint /bin/sh josecarlospg2907/backend_pgp:12.06.3 -c "/opt/lampp/lampp start && cd /home/usuario/symfony/API_PortalGP && symfony server:start --port=8000"
 ```
 
 - Ya tenemos la parte del backend en funcionamiento, ahora vamos a poner la parte del frontend, para ello ejecutamos los siguientes comandos en el siguiente orden:
