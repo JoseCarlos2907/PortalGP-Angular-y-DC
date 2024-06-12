@@ -1,5 +1,5 @@
 # Descargas la imagen del contenedor backend
-sudo docker pull josecarlos2907/backend_pgp:12.06.1
+sudo docker pull josecarlospg2907/backend_pgp:12.06.1
 
 # Creas la red para el contenedor
 sudo docker network create -–driver bridge -–subnet 172.20.0.0/16 -–gateway 172.20.0.1 red_pgp
