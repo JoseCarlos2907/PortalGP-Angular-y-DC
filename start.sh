@@ -17,7 +17,9 @@ COMANDO2 = "symfony server:start –-port=8000"
 docker exec backend/bin/sh -c "$COMANDO1 && $COMANDO2"
 
 # Se ejecutan estos comandos para arrancar la aplicación
-git pull https://github.com/JoseCarlos2907/Angular_PortalGP.git
+cd ..
+
+git clone https://github.com/JoseCarlos2907/Angular_PortalGP.git
 
 cd Angular_PortalGP
 npm i
