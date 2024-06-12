@@ -17,4 +17,4 @@ npm i
 ng s
 
 # Se abre en el navegador
-firefox "localhost:4200"
+firefox "http://localhost:4200"
